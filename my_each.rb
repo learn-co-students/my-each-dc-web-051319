@@ -1,3 +1,9 @@
-def my_each # put argument(s) here
-  # code here
+def my_each(arr)
+  tick = 0
+  
+  while tick < arr.length
+    yield arr[tick]
+    tick += 1
+  end
+  arr
 end
